@@ -13,24 +13,24 @@ function ColorMyPencils(color)
 end
 
 return {
-	{
-		"rose-pine/neovim",
-		name = "rose-pine",
-		config = function()
-			require("rose-pine").setup({
-				disable_background = true,
-				styles = {
-					italic = false,
-				},
-			})
-			ColorMyPencils("rose-pine")
-		end,
-	},
-
 	-- {
-	-- 	"EdenEast/nightfox.nvim",
+	-- 	"rose-pine/neovim",
+	-- 	name = "rose-pine",
 	-- 	config = function()
-	-- 		ColorMyPencils("carbonfox")
+	-- 		require("rose-pine").setup({
+	-- 			disable_background = true,
+	-- 			styles = {
+	-- 				italic = false,
+	-- 			},
+	-- 		})
+	-- 		ColorMyPencils("rose-pine")
 	-- 	end,
 	-- },
+
+	{
+		"EdenEast/nightfox.nvim",
+		config = function()
+			ColorMyPencils("carbonfox")
+		end,
+	},
 }
