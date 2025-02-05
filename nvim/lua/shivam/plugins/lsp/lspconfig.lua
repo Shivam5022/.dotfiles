@@ -54,7 +54,7 @@ return {
 				keymap.set("n", "<leader>sd", "<cmd>Telescope diagnostics bufnr=0<CR>", opts) -- show  diagnostics for file
 
 				opts.desc = "Show workspace diagnostics"
-				keymap.set("n", "<leader>swd", "<cmd>Telescope diagnostics<CR>", opts) -- show  diagnostics for file
+				keymap.set("n", "<leader>swd", "<cmd>Telescope diagnostics<CR>", opts) -- show  diagnostics for the workspace
 
 				opts.desc = "Go to previous diagnostic"
 				keymap.set("n", "[d", vim.diagnostic.goto_prev, opts) -- jump to previous diagnostic in buffer
