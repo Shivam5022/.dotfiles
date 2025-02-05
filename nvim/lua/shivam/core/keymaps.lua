@@ -9,6 +9,8 @@ keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- clear highlights when esc is pressed
 keymap.set("n", "<ESC>", ":nohl<CR>", { desc = "Clear search highlights" })
+keymap.set("n", "<leader>w", ":w<CR>", { desc = "Write to buffer" })
+keymap.set("n", "<leader>q", ":q<CR>", { desc = "Quit the buffer" })
 
 -- Some remaps from Primeagen
 --
