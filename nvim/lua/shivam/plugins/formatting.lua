@@ -30,6 +30,7 @@ return {
 		})
 
 		-- This will be used to format a specific selection of text
+		-- Or use this to format whole document
 
 		vim.keymap.set({ "n", "v" }, "<leader>for", function()
 			conform.format({

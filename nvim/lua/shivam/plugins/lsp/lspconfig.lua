@@ -118,6 +118,7 @@ return {
 						"--clang-tidy",
 						"--completion-style=bundled",
 						"--cross-file-rename",
+						"--all-scopes-completion",
 						"--header-insertion=iwyu",
 					},
 					capabilities = capabilities,
