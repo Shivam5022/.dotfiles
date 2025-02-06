@@ -15,6 +15,12 @@ opt.smartindent = true
 
 opt.wrap = false
 
+-- for undo tree saving
+opt.swapfile = false
+opt.backup = false
+opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+opt.undofile = true
+
 -- search settings
 opt.ignorecase = true
 opt.smartcase = true
