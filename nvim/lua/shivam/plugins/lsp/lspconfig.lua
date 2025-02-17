@@ -20,10 +20,10 @@ return {
 
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("UserLspConfig", {}),
-			callback = function(ev)
+			callback = function(event)
 				-- Buffer local mappings.
 				-- See `:help vim.lsp.*` for documentation on any of the below functions
-				local opts = { buffer = ev.buf, silent = true }
+				local opts = { buffer = event.buf, silent = true }
 
 				-- set keybinds
 				opts.desc = "Show LSP references"
@@ -73,6 +73,39 @@ return {
 
 				opts.desc = "Restart LSP"
 				keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
+
+				-- to highlight the current word under the cursor (taken fron nvim kickstart)
+				local client = vim.lsp.get_client_by_id(event.data.client_id)
+				if client and client.supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight) then
+					local highlight_augroup = vim.api.nvim_create_augroup("kickstart-lsp-highlight", { clear = false })
+					vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+						buffer = event.buf,
+						group = highlight_augroup,
+						callback = vim.lsp.buf.document_highlight,
+					})
+
+					vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
+						buffer = event.buf,
+						group = highlight_augroup,
+						callback = vim.lsp.buf.clear_references,
+					})
+
+					vim.api.nvim_create_autocmd("LspDetach", {
+						group = vim.api.nvim_create_augroup("kickstart-lsp-detach", { clear = true }),
+						callback = function(event2)
+							vim.lsp.buf.clear_references()
+							vim.api.nvim_clear_autocmds({ group = "kickstart-lsp-highlight", buffer = event2.buf })
+						end,
+					})
+				end
+
+				opts.desc = "Toggle inlay hints"
+				if client and client.supports_method(vim.lsp.protocol.Methods.textDocument_inlayHint) then
+					local bufnr = vim.api.nvim_get_current_buf()
+					keymap.set("n", "<leader>th", function()
+						vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled({ bufnr = bufnr }))
+					end, opts)
+				end
 			end,
 		})
 
