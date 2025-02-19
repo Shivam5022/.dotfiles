@@ -5,6 +5,7 @@ My config files
 ## NVIM Config
 
 - Install latest version of neovim
+- Install ripgrep, lazygit, fzf
 - Install clangd, clang-format
 - Install pyright using npm
 - Copy the config files and create symbolic links
