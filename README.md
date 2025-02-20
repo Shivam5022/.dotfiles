@@ -21,4 +21,4 @@ My config files
 
 - Install tmux
 - Copy the config files and create symbolic links
-- `tmux source-file ~/.tmux.conf` to apply the changes
+- `tmux source ~/.tmux.conf` to apply the changes
