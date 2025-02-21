@@ -159,6 +159,7 @@ return {
 						"--cross-file-rename",
 						"--all-scopes-completion",
 						"--header-insertion=iwyu",
+						"--offset-encoding=utf-16",
 					},
 					capabilities = capabilities,
 					-- TODO: figure out what is this

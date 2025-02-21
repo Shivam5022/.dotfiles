@@ -7,6 +7,7 @@ My config files
 - Install latest version of neovim
 - Install ripgrep, lazygit, fzf
 - Install clangd, clang-format
+- Note to self: For clangd working compile.json is very important, either use cmake or bear
 - Install pyright using npm
 - Copy the config files and create symbolic links
 
