@@ -10,3 +10,5 @@ ln -sf ~/.dotfiles/zshrc ~/.zshrc
 source ~/.zshrc
 echo "zshrc config linked successfully"
 
+ln -sf ~/.dotfiles/wezterm.lua ~/.wezterm.lua
+echo "Wezterm config linked successfully"

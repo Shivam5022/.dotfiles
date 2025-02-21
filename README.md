@@ -14,7 +14,7 @@ My config files
 
 - Make zsh as default shell
 - Install oh-my-zsh with powerlevel10k theme (copy local .oh-my-zsh folder or refer the josean yt video)
-- Install fzf
+- Install fzf, eza, zoxide
 - Copy the config files and create symbolic links
 
 ## TMUX Config
@@ -22,3 +22,8 @@ My config files
 - Install tmux
 - Copy the config files and create symbolic links
 - `tmux source ~/.tmux.conf` to apply the changes
+
+## Wezterm Config
+
+- Install wezterm on your machine
+- Copy the config files and create symbolic links
