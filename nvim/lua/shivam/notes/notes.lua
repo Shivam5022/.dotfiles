@@ -24,6 +24,7 @@ local function float_win_config()
 		col = utils.center_in(vim.o.columns, width),
 		row = utils.center_in(vim.o.lines, height),
 		border = "double",
+		title = "Notes",
 	}
 end
 
