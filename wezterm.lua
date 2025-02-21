@@ -21,6 +21,15 @@ config.font_size = 17
 config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.25
 config.macos_window_background_blur = 30
+config.window_frame = {
+	font = wezterm.font({ family = "Roboto", weight = "Bold" }),
+	font_size = 14.0,
+}
 
+config.colors = {
+	tab_bar = {
+		inactive_tab_edge = "#575757",
+	},
+}
 -- and finally, return the configuration to wezterm
 return config
