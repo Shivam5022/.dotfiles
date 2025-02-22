@@ -117,8 +117,11 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 eval "$(fzf --zsh)"
+eval "$(zoxide init zsh)"
 # Some aliases
+alias cd='z'
 alias cl='clear'
 alias lg='lazygit'
 alias ldc='lazydocker' 
+alias ls="eza --icons=always"
 

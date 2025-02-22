@@ -1,4 +1,5 @@
--- Pull in the wezterm API
+-- 1. Enter the copy mode using ctrl+shift+x and using vim keybindings and `y` to copy
+
 local wezterm = require("wezterm")
 
 -- This will hold the configuration.
