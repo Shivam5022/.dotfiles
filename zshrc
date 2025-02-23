@@ -124,4 +124,24 @@ alias cl='clear'
 alias lg='lazygit'
 alias ldc='lazydocker' 
 alias ls="eza --icons=always"
+# Function to query cheat.sh and display results with less
+alias fj="nvim"
+alias fjj="nvim ."
 
+# Function to query cheat.sh and display results with less
+cheat() {
+    if [ -z "$1" ]; then
+        echo "Usage: cheat <topic>"
+        echo "Example: cheat grep"
+        return 1
+    fi
+
+    local topic="$1"
+
+    # Fetch the cheat sheet from cheat.sh
+    echo "https://cheat.sh/${topic}" 
+    curl -s "https://cheat.sh/${topic}" | less -R
+}
+
+# showing neofetch
+# neofetch
