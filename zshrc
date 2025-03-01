@@ -118,15 +118,17 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
+
 # Some aliases
 alias cd='z'
 alias cl='clear'
 alias lg='lazygit'
 alias ldc='lazydocker' 
 alias ls="eza --icons=always"
-# Function to query cheat.sh and display results with less
 alias fj="nvim"
 alias fjj="nvim ."
+
+export TENSILE_DATABASE_URL="postgresql://admin:tensile@10.237.27.202:5432/tensile_exp"
 
 # Function to query cheat.sh and display results with less
 cheat() {
@@ -139,8 +141,8 @@ cheat() {
     local topic="$1"
 
     # Fetch the cheat sheet from cheat.sh
-    echo "https://cheat.sh/${topic}" 
-    curl -s "https://cheat.sh/${topic}" | less -R
+    echo "https://www.cheat.sh/${topic}" 
+    curl -s "https://www.cheat.sh/${topic}" | less -R
 }
 
 # showing neofetch

@@ -86,7 +86,7 @@ local function setup_user_commands(opts)
 		open_floating_file(opts.target_file)
 	end, {})
 	vim.api.nvim_create_user_command("Ti", function()
-		open_floating_file("~/notes/ideas.md")
+		open_floating_file("~/SV/ideas.md")
 	end, {})
 end
 

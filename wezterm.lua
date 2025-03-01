@@ -16,7 +16,7 @@ config.colors = {
 	-- brights = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#A277FF", "#a277ff", "#24EAF7", "#24EAF7" },
 }
 config.font = wezterm.font("JetBrainsMono Nerd Font Propo")
-config.font_size = 17
+config.font_size = 16
 
 -- config.window_background_image = "/path/to/wallpaper.jpg"
 config.window_decorations = "RESIZE"

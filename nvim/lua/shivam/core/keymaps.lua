@@ -12,6 +12,9 @@ keymap.set("n", "<ESC>", ":nohl<CR>", { desc = "Clear search highlights" })
 keymap.set("n", "<leader>w", ":w<CR>", { desc = "Write to buffer" })
 keymap.set("n", "<leader>q", ":q<CR>", { desc = "Quit the buffer" })
 
+keymap.set("n", "<leader>;", "%", { desc = "Go to maching bracket" })
+keymap.set("v", "<leader>;", "%", { desc = "Go to maching bracket" })
+
 -- Some remaps from Primeagen the OG
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
