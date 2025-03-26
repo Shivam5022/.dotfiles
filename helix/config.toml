@@ -1,0 +1,36 @@
+theme = "rose_pine"
+
+[editor]
+bufferline = "multiple"
+cursorline = true
+rulers = [120]
+end-of-line-diagnostics = "hint"
+true-color = true
+line-number = "relative"
+color-modes = true
+auto-pairs = true
+# gutters = ["diff", "line-numbers"]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[keys.insert.j]
+k = "normal_mode" # Maps `jk` to exit insert mode
+
+[keys.normal.space]
+w = ":write"
+q = ":quit"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+right = ["diagnostics", "selections", "register", "position", "file-encoding", "version-control"]
+
+
+[editor.inline-diagnostics]
+cursor-line = "error" # Show inline diagnostics when the cursor is on the line
+other-lines = "disable" # Don't expand diagnostics unless the cursor is on the line

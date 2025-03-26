@@ -147,3 +147,4 @@ cheat() {
 
 # showing neofetch
 # neofetch
+export HELIX_RUNTIME=~/helix/runtime

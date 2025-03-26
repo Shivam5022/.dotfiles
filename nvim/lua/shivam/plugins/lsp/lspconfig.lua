@@ -171,6 +171,25 @@ return {
 					},
 				})
 			end,
+
+			-- ["rust_analyzer"] = function()
+			-- 	lspconfig["rust_analyzer"].setup({
+			-- 		imports = {
+			-- 			granularity = {
+			-- 				group = "module",
+			-- 			},
+			-- 			prefix = "self",
+			-- 		},
+			-- 		cargo = {
+			-- 			buildScripts = {
+			-- 				enable = true,
+			-- 			},
+			-- 		},
+			-- 		procMacro = {
+			-- 			enable = true,
+			-- 		},
+			-- 	})
+			-- end,
 		})
 	end,
 }
