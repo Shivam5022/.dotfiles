@@ -2,7 +2,12 @@
 
 My config files
 
-## NVIM Config
+## Helix Config
+- Install Helix (or build from source)
+- Copy the config files
+- You are done! No need to install anything, everything needed is there!!!
+
+## NVIM Config (switched to helix now)
 
 - Install latest version of neovim
 - Install ripgrep, lazygit, fzf
