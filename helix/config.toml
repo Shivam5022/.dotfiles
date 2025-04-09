@@ -1,4 +1,4 @@
-theme = "rose_pine"
+theme = "ao"
 
 [editor]
 bufferline = "multiple"
@@ -18,6 +18,9 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
 
 [keys.insert.j]
 k = "normal_mode" # Maps `jk` to exit insert mode
