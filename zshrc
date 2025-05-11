@@ -125,10 +125,9 @@ alias cl='clear'
 alias lg='lazygit'
 alias ldc='lazydocker' 
 alias ls="eza --icons=always"
-alias fj="nvim"
-alias fjj="nvim ."
+alias fj="hx"
+alias fjj="hx ."
 
-export TENSILE_DATABASE_URL="postgresql://admin:tensile@10.237.27.202:5432/tensile_exp"
 
 # Function to query cheat.sh and display results with less
 cheat() {
