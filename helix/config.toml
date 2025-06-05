@@ -29,6 +29,37 @@ k = "normal_mode" # Maps `jk` to exit insert mode
 w = ":write"
 q = ":quit"
 
+[keys.normal]
+H = ":buffer-previous"
+L = ":buffer-next"
+X = "select_line_above"
+C-h = "jump_view_left" # switching panes
+C-l = "jump_view_right"
+ret = "goto_word" # shortcut for gw
+
+# Match in next instance of pair
+[keys.normal.m.n]
+"(" = "@s\\(<ret>nmim"
+"{" = "@s\\{<ret>nmim"
+"[" = "@s\\[<ret>nmim"
+'"' = '@s\"<ret>nmim'
+"'" = "@s\\'<ret>nmim"
+"<" = "@s<lt><ret>nmim"
+
+# Match in previous instance of pair
+[keys.normal.m.p]
+"(" = "@s\\)<ret>Nmmmim"
+"{" = "@s\\}<ret>Nmmmim"
+"[" = "@s\\]<ret>Nmmmim"
+'"' = '@s\"<ret>Nmmmim'
+"'" = "@s\\'<ret>Nmmmim"
+"<" = "@s<gt><ret>Nmmmim"
+
+[keys.select]
+ret = "extend_to_word"
+X = "select_line_above"
+
+
 [editor.statusline]
 left = ["mode", "spinner", "file-name"]
 right = ["diagnostics", "selections", "register", "position", "file-encoding", "version-control"]
