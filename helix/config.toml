@@ -19,9 +19,6 @@ select = "underline"
 [editor.file-picker]
 hidden = false
 
-[keys.normal]
-esc = ["collapse_selection", "keep_primary_selection"]
-
 [keys.insert.j]
 k = "normal_mode" # Maps `jk` to exit insert mode
 
@@ -30,6 +27,7 @@ w = ":write"
 q = ":quit"
 
 [keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
 H = ":buffer-previous"
 L = ":buffer-next"
 X = "select_line_above"
@@ -59,11 +57,9 @@ ret = "goto_word" # shortcut for gw
 ret = "extend_to_word"
 X = "select_line_above"
 
-
 [editor.statusline]
 left = ["mode", "spinner", "file-name"]
 right = ["diagnostics", "selections", "register", "position", "file-encoding", "version-control"]
-
 
 [editor.inline-diagnostics]
 cursor-line = "error" # Show inline diagnostics when the cursor is on the line
