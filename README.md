@@ -17,7 +17,7 @@ My config files
 ## ZSH Config
 
 - Make zsh as default shell
-- Install oh-my-zsh with powerlevel10k theme
+- Install oh-my-zsh with powerlevel10k theme, git zsh-autosuggestions zsh-syntax-highlighting plugins.
 - Install fzf, eza, zoxide
 - Copy the config files and create symbolic links
 
