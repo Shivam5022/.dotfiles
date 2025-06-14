@@ -1,25 +1,23 @@
 # .dotfiles
 
+Things to do when you get a new linux server:
+1. Install Tmux
+2. Install Helix (first install rust)
+3. Install Lazygit
+4. Install zsh and setup
+
 My config files
 
 ## Helix Config
-- Install Helix (or build from source)
+- Build helix from source
 - Copy the config files
 - You are done! No need to install anything, everything needed is there!!!
-
-## NVIM Config (switched to helix now)
-
-- Install latest version of neovim
-- Install ripgrep, lazygit, fzf
-- Install clangd, clang-format
-- Note to self: For clangd working compile.json is very important, either use cmake or bear
-- Install pyright using npm
-- Copy the config files and create symbolic links
+- For language servers and formatters: Clangd, Clang-format for C++ (compile.json), Pyright for Python (using npm).
 
 ## ZSH Config
 
 - Make zsh as default shell
-- Install oh-my-zsh with powerlevel10k theme (copy local .oh-my-zsh folder or refer the josean yt video)
+- Install oh-my-zsh with powerlevel10k theme
 - Install fzf, eza, zoxide
 - Copy the config files and create symbolic links
 
