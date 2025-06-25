@@ -1,12 +1,17 @@
 # .dotfiles
 
-Things to do when you get a new linux server:
-1. Install Tmux
-2. Install Helix (first install rust)
-3. Install Lazygit
-4. Install zsh and setup
+> I like to map my `capslock` key to `control` since its easier to press.
 
-My config files
+## Things to do when you get a new linux server:
+1. Install Tmux
+2. Build Helix from source (First install Rust)
+3. Install Lazygit
+4. Install ZSH and configure
+
+## Windows Ricing
+1. Install GlazeWM and configure it.
+2. Install WezTerm
+3. Install Microsoft PowerToys Run (for Spotlight like feature in Windows)
 
 ## Helix Config
 - Build helix from source
