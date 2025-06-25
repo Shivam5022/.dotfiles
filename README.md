@@ -9,9 +9,10 @@
 4. Install ZSH and configure
 
 ## Windows Ricing
-1. Install GlazeWM and configure it.
+1. Install GlazeWM and configure it
 2. Install WezTerm
-3. Install Microsoft PowerToys Run (for Spotlight like feature in Windows)
+3. Install Helix
+4. Install Microsoft PowerToys Run (for Spotlight like feature in Windows)
 
 ## Helix Config
 - Build helix from source
