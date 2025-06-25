@@ -16,6 +16,8 @@ config.colors = {
 	brights = { "#214969", "#E52E2E", "#44FFB1", "#FFE073", "#A277FF", "#a277ff", "#24EAF7", "#24EAF7" },
 }
 
+config.default_cursor_style = "BlinkingBlock"
+config.cursor_blink_rate = 500
 config.font_size = 10.7
 config.color_scheme = 'ayu'
 config.window_decorations = "RESIZE"

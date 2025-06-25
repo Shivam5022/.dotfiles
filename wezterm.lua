@@ -12,6 +12,8 @@ config.colors = {
 	selection_fg = "#CBE0F0",
 }
 
+config.default_cursor_style = "BlinkingBlock"
+config.cursor_blink_rate = 500
 config.font = wezterm.font("JetBrainsMono Nerd Font Propo")
 config.font_size = 16
 
