@@ -34,7 +34,7 @@ X = "select_line_above"
 C-h = "jump_view_left" # switching panes
 C-l = "jump_view_right"
 ret = "goto_word" # shortcut for gw
-";" = "@A;<esc>"
+# ";" = "@A;<esc>"
 
 # Match in next instance of pair
 [keys.normal.m.n]
